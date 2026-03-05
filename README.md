@@ -6,7 +6,6 @@ Made using ChatGPT
 Folder structure:
 
 trainer_minimal/
-│
-├── main.py
-├── dashboard.kv
-└── ble_client.py
+-main.py
+-dashboard.kv
+-ble_client.py
