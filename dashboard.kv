@@ -1,0 +1,30 @@
+<Dashboard>:
+    canvas.before:
+        Color:
+            rgba: 0.08, 0.08, 0.08, 1
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+    BoxLayout:
+        orientation: "vertical"
+        padding: 40
+        spacing: 40
+
+        Label:
+            text: "POWER"
+            font_size: 30
+            color: 0.6, 0.6, 0.6, 1
+
+        Label:
+            text: str(root.power) + " W"
+            font_size: 130
+            bold: True
+
+        Label:
+            text: "Cadence: " + str(int(root.cadence)) + " rpm"
+            font_size: 50
+
+        Label:
+            text: "Speed: " + "{:.1f}".format(root.speed) + " km/h"
+            font_size: 50
